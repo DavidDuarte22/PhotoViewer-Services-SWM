@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ServiceBuilderInterface {
+public protocol ServiceBuilderInterface {
 
     var api: ApiServiceInterface { get }
 

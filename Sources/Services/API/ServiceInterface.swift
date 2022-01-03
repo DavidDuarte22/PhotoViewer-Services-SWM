@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ApiServiceInterface {
+public protocol ApiServiceInterface {
   
   func photos(page: Int, completionHandler: @escaping (Result<PhotosRequestDTO, HTTP.Error>) -> Void)
   func photo(byID: Int, completionHandler: @escaping (Result<PhotoDTO, HTTP.Error>) -> Void)
@@ -41,7 +41,7 @@ final public class MyApiService: ApiServiceInterface {
     self.token = token
   }
   
-  func photos(page: Int, completionHandler: @escaping (Result<PhotosRequestDTO, HTTP.Error>) -> Void) {
+  public func photos(page: Int, completionHandler: @escaping (Result<PhotosRequestDTO, HTTP.Error>) -> Void) {
     
     guard let url = URL(string: self.baseUrl + "search?query=nature&page=\(page)") else {
       completionHandler(.failure(.invalidRequest))
@@ -61,7 +61,7 @@ final public class MyApiService: ApiServiceInterface {
   }
   
   
-  func photo(byID: Int, completionHandler: @escaping (Result<PhotoDTO, HTTP.Error>) -> Void) {
+  public func photo(byID: Int, completionHandler: @escaping (Result<PhotoDTO, HTTP.Error>) -> Void) {
     guard let url = URL(string: self.baseUrl + "photos/\(byID)") else {
       completionHandler(.failure(.invalidRequest))
       return

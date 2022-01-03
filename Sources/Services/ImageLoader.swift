@@ -9,51 +9,53 @@
 import UIKit
 
 public class ImageLoader {
-  private var loadedImages = [URL: UIImage]() // simple in-memory cache for loaded images.
-  private var runningRequests = [UUID: URLSessionDataTask]() // dictionary to keep track of running downloads and cancel them later.
-  
-  public func loadImage(_ url: URL, _ completion: @escaping (Result<UIImage, Error>) -> Void) -> UUID? {
-
-    // if already exists in cache return it
-    if let image = loadedImages[url] {
-      completion(.success(image))
-      return nil
+    private var loadedImages = [URL: UIImage]() // simple in-memory cache for loaded images.
+    private var runningRequests = [UUID: URLSessionDataTask]() // dictionary to keep track of running downloads and cancel them later.
+    
+    public init() { }
+    
+    public func loadImage(_ url: URL, _ completion: @escaping (Result<UIImage, Error>) -> Void) -> UUID? {
+        
+        // if already exists in cache return it
+        if let image = loadedImages[url] {
+            completion(.success(image))
+            return nil
+        }
+        // UUID instance that is used to identify the data task
+        let uuid = UUID()
+        
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            // remove the running task before we leave the scope of the data task’s completion handler.
+            defer {self.runningRequests.removeValue(forKey: uuid) }
+            
+            // cache and call the completion handler with the loaded image
+            if let data = data, let image = UIImage(data: data) {
+                self.loadedImages[url] = image
+                completion(.success(image))
+                return
+            }
+            
+            guard let error = error else {
+                completion(.failure(HTTP.Error.invalidRequest))
+                return
+            }
+            
+            guard (error as NSError).code == NSURLErrorCancelled else {
+                completion(.failure(error))
+                return
+            }
+            
+            // the request was cancelled, no need to call the callback
+        }
+        task.resume()
+        
+        // 6
+        runningRequests[uuid] = task
+        return uuid
     }
-    // UUID instance that is used to identify the data task
-    let uuid = UUID()
-
-    let task = URLSession.shared.dataTask(with: url) { data, response, error in
-      // remove the running task before we leave the scope of the data task’s completion handler.
-      defer {self.runningRequests.removeValue(forKey: uuid) }
-
-      // cache and call the completion handler with the loaded image
-      if let data = data, let image = UIImage(data: data) {
-        self.loadedImages[url] = image
-        completion(.success(image))
-        return
-      }
-
-      guard let error = error else {
-        completion(.failure(HTTP.Error.invalidRequest))
-        return
-      }
-
-      guard (error as NSError).code == NSURLErrorCancelled else {
-        completion(.failure(error))
-        return
-      }
-
-      // the request was cancelled, no need to call the callback
+    
+    public func cancelLoad(_ uuid: UUID) {
+        runningRequests[uuid]?.cancel()
+        runningRequests.removeValue(forKey: uuid)
     }
-    task.resume()
-
-    // 6
-    runningRequests[uuid] = task
-    return uuid
-  }
-
-  public func cancelLoad(_ uuid: UUID) {
-    runningRequests[uuid]?.cancel()
-    runningRequests.removeValue(forKey: uuid)
-  }
 }
