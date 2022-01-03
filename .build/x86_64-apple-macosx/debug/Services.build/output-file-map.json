@@ -2,6 +2,36 @@
   "": {
     "swift-dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/master.swiftdeps"
   },
+  "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/API/ServiceBuilterInterface.swift": {
+    "dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/API/ServiceBuilterInterface.d",
+    "object": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/API/ServiceBuilterInterface.swift.o",
+    "swiftmodule": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/API/ServiceBuilterInterface~partial.swiftmodule",
+    "swift-dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/API/ServiceBuilterInterface.swiftdeps"
+  },
+  "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/API/ServiceInterface.swift": {
+    "dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/API/ServiceInterface.d",
+    "object": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/API/ServiceInterface.swift.o",
+    "swiftmodule": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/API/ServiceInterface~partial.swiftmodule",
+    "swift-dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/API/ServiceInterface.swiftdeps"
+  },
+  "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/ImageLoader.swift": {
+    "dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/ImageLoader.d",
+    "object": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/ImageLoader.swift.o",
+    "swiftmodule": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/ImageLoader~partial.swiftmodule",
+    "swift-dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/ImageLoader.swiftdeps"
+  },
+  "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/Models/PhotoDTO.swift": {
+    "dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Models/PhotoDTO.d",
+    "object": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Models/PhotoDTO.swift.o",
+    "swiftmodule": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Models/PhotoDTO~partial.swiftmodule",
+    "swift-dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Models/PhotoDTO.swiftdeps"
+  },
+  "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/Models/PhotosRequestDTO.swift": {
+    "dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Models/PhotosRequestDTO.d",
+    "object": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Models/PhotosRequestDTO.swift.o",
+    "swiftmodule": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Models/PhotosRequestDTO~partial.swiftmodule",
+    "swift-dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Models/PhotosRequestDTO.swiftdeps"
+  },
   "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/Services.swift": {
     "dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Services.d",
     "object": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Services.swift.o",

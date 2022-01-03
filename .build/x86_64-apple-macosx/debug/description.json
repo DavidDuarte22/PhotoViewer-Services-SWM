@@ -15,6 +15,26 @@
       "inputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/API/ServiceBuilterInterface.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/API/ServiceInterface.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/ImageLoader.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/Models/PhotoDTO.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/Models/PhotosRequestDTO.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/Services.swift"
         }
       ],
@@ -22,6 +42,11 @@
       "moduleName" : "Services",
       "moduleOutputPath" : "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.swiftmodule",
       "objects" : [
+        "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/API/ServiceBuilterInterface.swift.o",
+        "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/API/ServiceInterface.swift.o",
+        "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/ImageLoader.swift.o",
+        "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Models/PhotoDTO.swift.o",
+        "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Models/PhotosRequestDTO.swift.o",
         "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Services.swift.o"
       ],
       "otherArguments" : [
@@ -53,9 +78,33 @@
         "-emit-objc-header",
         "-emit-objc-header-path",
         "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Services-Swift.h",
-        "-color-diagnostics"
+        "-color-diagnostics",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.0.sdk",
+        "-target",
+        "x86_64-apple-ios13.0-simulator"
       ],
       "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/API/ServiceBuilterInterface.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/API/ServiceInterface.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/ImageLoader.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Models/PhotoDTO.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Models/PhotosRequestDTO.swift.o"
+        },
         {
           "kind" : "file",
           "name" : "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Services.swift.o"
@@ -66,6 +115,11 @@
         }
       ],
       "sources" : [
+        "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/API/ServiceBuilterInterface.swift",
+        "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/API/ServiceInterface.swift",
+        "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/ImageLoader.swift",
+        "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/Models/PhotoDTO.swift",
+        "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/Models/PhotosRequestDTO.swift",
         "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/Services.swift"
       ],
       "tempsPath" : "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build",
@@ -116,7 +170,11 @@
         "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/ModuleCache",
         "-parseable-output",
         "-parse-as-library",
-        "-color-diagnostics"
+        "-color-diagnostics",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator15.0.sdk",
+        "-target",
+        "x86_64-apple-ios13.0-simulator"
       ],
       "outputs" : [
         {
