@@ -14,6 +14,14 @@ public struct PhotosRequestDTO: Codable {
     let photos: [PhotoDTO]
     let nextPage: String
 
+    public init(totalResults: Int, page: Int, perPage: Int, photos: [PhotoDTO], nextPage: String){
+        self.totalResults = totalResults
+        self.page = page
+        self.perPage = perPage
+        self.photos = photos
+        self.nextPage = nextPage
+    }
+    
     enum CodingKeys: String, CodingKey {
         case totalResults = "total_results"
         case page

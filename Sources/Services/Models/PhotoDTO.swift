@@ -18,7 +18,20 @@ public struct PhotoDTO: Codable {
     let avgColor: String
     let src: SrcDTO
     let liked: Bool
-
+    
+    public init(id: Int, width: Int, height: Int, url: String, photographer: String, photographerURL: String, photographerID: Int, avgColor: String, src: SrcDTO, liked: Bool){
+        self.id = id
+        self. width = width
+        self.height = height
+        self.url = url
+        self.photographer = photographer
+        self.photographerID = photographerID
+        self.photographerURL = photographerURL
+        self.avgColor = avgColor
+        self.src = src
+        self.liked = liked
+    }
+    
     enum CodingKeys: String, CodingKey {
         case id, width, height, url, photographer
         case photographerURL = "photographer_url"
@@ -32,7 +45,18 @@ public struct PhotoDTO: Codable {
 public struct SrcDTO: Codable {
     let original, large2X, large, medium: String
     let small, portrait, landscape, tiny: String
-
+    
+    public init(original: String, large2X: String, large: String, medium: String, small: String, portrait: String, landscape: String, tiny: String) {
+        self.original = original
+        self.large2X = large2X
+        self.large = large
+        self.medium = medium
+        self.small = small
+        self.portrait = portrait
+        self.landscape = landscape
+        self.tiny = tiny
+    }
+    
     enum CodingKeys: String, CodingKey {
         case original
         case large2X = "large2x"
