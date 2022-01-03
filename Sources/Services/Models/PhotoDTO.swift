@@ -21,7 +21,7 @@ public struct PhotoDTO: Codable {
     
     public init(id: Int, width: Int, height: Int, url: String, photographer: String, photographerURL: String, photographerID: Int, avgColor: String, src: SrcDTO, liked: Bool){
         self.id = id
-        self. width = width
+        self.width = width
         self.height = height
         self.url = url
         self.photographer = photographer
