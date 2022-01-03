@@ -1,0 +1,4 @@
+module Services {
+    header "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Services-Swift.h"
+    requires objc
+}

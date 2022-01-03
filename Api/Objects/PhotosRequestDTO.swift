@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - Welcome
-struct PhotosRequestDTO: Codable {
+public struct PhotosRequestDTO: Codable {
     let totalResults, page, perPage: Int
     let photos: [PhotoDTO]
     let nextPage: String

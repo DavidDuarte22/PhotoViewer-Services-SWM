@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ImageLoader {
+public class ImageLoader {
   private var loadedImages = [URL: UIImage]() // simple in-memory cache for loaded images.
   private var runningRequests = [UUID: URLSessionDataTask]() // dictionary to keep track of running downloads and cancel them later.
   
-  func loadImage(_ url: URL, _ completion: @escaping (Result<UIImage, Error>) -> Void) -> UUID? {
+  public func loadImage(_ url: URL, _ completion: @escaping (Result<UIImage, Error>) -> Void) -> UUID? {
 
     // if already exists in cache return it
     if let image = loadedImages[url] {
@@ -52,7 +52,7 @@ class ImageLoader {
     return uuid
   }
 
-  func cancelLoad(_ uuid: UUID) {
+  public func cancelLoad(_ uuid: UUID) {
     runningRequests[uuid]?.cancel()
     runningRequests.removeValue(forKey: uuid)
   }

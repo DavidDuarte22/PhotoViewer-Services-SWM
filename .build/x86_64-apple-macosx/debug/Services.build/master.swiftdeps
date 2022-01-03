@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)"
+options: "8f91f5c080ee05dfa082fbbdc06113a444cc9a4781f02ab54a8aa8fd08142ceb"
+build_start_time: [1641203326, 429359912]
+build_end_time: [1641203328, 511831998]
+inputs:
+  "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/Services.swift": [1640945988, 985949516]

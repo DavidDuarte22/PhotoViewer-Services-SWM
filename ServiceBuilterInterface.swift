@@ -8,8 +8,8 @@
 
 import Foundation
 
-protocol ServiceBuilderInterface {
+public protocol ServiceBuilderInterface {
 
-    var api: ApiServiceInterface { get }
+    public var api: ApiServiceInterface { get }
 
 }

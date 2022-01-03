@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/master.swiftdeps"
+  },
+  "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/Sources/Services/Services.swift": {
+    "dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Services.d",
+    "object": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Services.swift.o",
+    "swiftmodule": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Services~partial.swiftmodule",
+    "swift-dependencies": "/Users/davidduarte/Documents/PhotoViewer-Services-SWM/.build/x86_64-apple-macosx/debug/Services.build/Services.swiftdeps"
+  }
+}

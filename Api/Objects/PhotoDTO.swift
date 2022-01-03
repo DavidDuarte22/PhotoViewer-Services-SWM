@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - Photo
-struct PhotoDTO: Codable {
+public struct PhotoDTO: Codable {
     let id, width, height: Int
     let url: String
     let photographer: String
@@ -29,7 +29,7 @@ struct PhotoDTO: Codable {
 }
 
 // MARK: - Src
-struct SrcDTO: Codable {
+public struct SrcDTO: Codable {
     let original, large2X, large, medium: String
     let small, portrait, landscape, tiny: String
 
