@@ -10,14 +10,14 @@ import Foundation
 
 // MARK: - Photo
 public struct PhotoDTO: Codable {
-    let id, width, height: Int
-    let url: String
-    let photographer: String
-    let photographerURL: String
-    let photographerID: Int
-    let avgColor: String
-    let src: SrcDTO
-    let liked: Bool
+    public let id, width, height: Int
+    public let url: String
+    public let photographer: String
+    public let photographerURL: String
+    public let photographerID: Int
+    public let avgColor: String
+    public let src: SrcDTO
+    public let liked: Bool
     
     public init(id: Int, width: Int, height: Int, url: String, photographer: String, photographerURL: String, photographerID: Int, avgColor: String, src: SrcDTO, liked: Bool){
         self.id = id

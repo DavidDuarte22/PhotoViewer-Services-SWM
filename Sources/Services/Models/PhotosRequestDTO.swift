@@ -10,9 +10,9 @@ import Foundation
 
 // MARK: - Welcome
 public struct PhotosRequestDTO: Codable {
-    let totalResults, page, perPage: Int
-    let photos: [PhotoDTO]
-    let nextPage: String
+    public let totalResults, page, perPage: Int
+    public let photos: [PhotoDTO]
+    public let nextPage: String
 
     public init(totalResults: Int, page: Int, perPage: Int, photos: [PhotoDTO], nextPage: String){
         self.totalResults = totalResults
