@@ -22,7 +22,7 @@ public enum HTTP {
     case get
     //...
   }
-  enum Error: LocalizedError {
+  public enum Error: LocalizedError {
     case invalidResponse
     case invalidRequest
     case statusCode(Int)
