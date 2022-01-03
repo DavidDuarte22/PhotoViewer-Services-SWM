@@ -43,8 +43,8 @@ public struct PhotoDTO: Codable {
 
 // MARK: - Src
 public struct SrcDTO: Codable {
-    let original, large2X, large, medium: String
-    let small, portrait, landscape, tiny: String
+    public let original, large2X, large, medium: String
+    public let small, portrait, landscape, tiny: String
     
     public init(original: String, large2X: String, large: String, medium: String, small: String, portrait: String, landscape: String, tiny: String) {
         self.original = original
